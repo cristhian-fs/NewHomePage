@@ -1,0 +1,71 @@
+:root {
+  --cor-linha: #4f5be0;
+  --espessura-linha: 1px;
+  --duracao-animation: 10s;
+  --delay-animation: 5s;
+  --tamanho-quadrados: 7px;
+  --background-quadrados: #fff;
+  --espessura-borda-quadrados: 1px;
+  --cor-borda-quadrados: #4f5be0;
+}
+
+.blueRect {
+  content: "";
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: var(--espessura-linha) solid var(--cor-linha);
+  transform-origin: left top;
+  animation: selectElement var(--duracao-animation) ease-in-out
+    var(--delay-animation) infinite;
+}
+
+.square {
+  content: "";
+  width: var(--tamanho-quadrados);
+  height: var(--tamanho-quadrados);
+  position: absolute;
+  background: var(--background-quadrados);
+  border: var(--espessura-borda-quadrados) solid var(--cor-borda-quadrados);
+}
+
+.topLeft {
+  top: -4px;
+  left: -4px;
+  transform: translate(-50%, -50%);
+  animation: topLeftSquare var(--duracao-animation) ease-in-out
+    var(--delay-animation) infinite;
+}
+
+.topRight {
+  top: -4px;
+  right: -4px;
+  transform: translate(50%, -50%);
+  animation: topRightSquare var(--duracao-animation) ease-in-out
+    var(--delay-animation) infinite;
+}
+
+.bottomLeft {
+  bottom: -4px;
+  left: -4px;
+  transform: translate(-50%, 50%);
+  animation: bottomLeftSquare var(--duracao-animation) ease-in-out
+    var(--delay-animation) infinite;
+}
+
+.bottomRight {
+  bottom: -4px;
+  right: -4px;
+  transform: translate(50%, 50%);
+  animation: bottomRightSquare var(--duracao-animation) ease-in-out
+    var(--delay-animation) infinite;
+}
+
+.arrow-s2-anim {
+  position: absolute;
+  top: 80%;
+  left: 70%;
+}

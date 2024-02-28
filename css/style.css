@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  src: url("../fonts/HelveticaNowDisplay-RegIta.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay-RegIta.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  src: url("../fonts/HelveticaNowDisplay-Medium.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  src: url("../fonts/HelveticaNowDisplay-MedIta.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay-MedIta.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  src: url("../fonts/HelveticaNowDisplay-Bold.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  src: url("../fonts/HelveticaNowDisplay-Regular.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNowDisplay";
+  src: url("../fonts/HelveticaNowDisplay-BoldIta.woff2") format("woff2"), url("../fonts/HelveticaNowDisplay-BoldIta.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+.gradient-h1-hero {
+  background: linear-gradient(121deg, #4f5be0 -2.87%, #0c1578 36.07%, #151626 79.83%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:root {
+  --cor-linha: #4f5be0;
+  --espessura-linha: 1px;
+  --duracao-animation: 10s;
+  --delay-animation: 5s;
+  --tamanho-quadrados: 7px;
+  --background-quadrados: #fff;
+  --espessura-borda-quadrados: 1px;
+  --cor-borda-quadrados: #4f5be0;
+}
+
+.blueRect {
+  content: "";
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: var(--espessura-linha) solid var(--cor-linha);
+  transform-origin: left top;
+  animation: selectElement var(--duracao-animation) ease-in-out var(--delay-animation) infinite;
+}
+
+.square {
+  content: "";
+  width: var(--tamanho-quadrados);
+  height: var(--tamanho-quadrados);
+  position: absolute;
+  background: var(--background-quadrados);
+  border: var(--espessura-borda-quadrados) solid var(--cor-borda-quadrados);
+}
+
+.topLeft {
+  top: -4px;
+  left: -4px;
+  transform: translate(-50%, -50%);
+  animation: topLeftSquare var(--duracao-animation) ease-in-out var(--delay-animation) infinite;
+}
+
+.topRight {
+  top: -4px;
+  right: -4px;
+  transform: translate(50%, -50%);
+  animation: topRightSquare var(--duracao-animation) ease-in-out var(--delay-animation) infinite;
+}
+
+.bottomLeft {
+  bottom: -4px;
+  left: -4px;
+  transform: translate(-50%, 50%);
+  animation: bottomLeftSquare var(--duracao-animation) ease-in-out var(--delay-animation) infinite;
+}
+
+.bottomRight {
+  bottom: -4px;
+  right: -4px;
+  transform: translate(50%, 50%);
+  animation: bottomRightSquare var(--duracao-animation) ease-in-out var(--delay-animation) infinite;
+}
+
+.arrow-s2-anim {
+  position: absolute;
+  top: 80%;
+  left: 70%;
+}/*# sourceMappingURL=style.css.map */
