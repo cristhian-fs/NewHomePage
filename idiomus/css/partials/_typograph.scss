@@ -1,0 +1,220 @@
+//Typography of project
+
+@mixin typeface-1($size, $device: desktop) {
+  font-family: "Manrope", sans-serif;
+
+  // H1
+  @if $size == h1 and $device == desktop {
+    font-size: 48px;
+    line-height: 110%;
+  } @else if $size == h1 and $device == mobile {
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  // H2
+  @else if $size == h2 and $device == desktop {
+    font-size: 32px;
+    line-height: 100%;
+  } @else if $size == h2 and $device == mobile {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  // H3
+  @else if $size == h3 and $device == desktop {
+    font-size: 24px;
+    line-height: 120%;
+  } @else if $size == h3 and $device == mobile {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  // h4
+  @else if $size == h4 and $device == desktop {
+    font-size: 20px;
+    line-height: 130%;
+  } @else if $size == h4 and $device == mobile {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  // h5
+  @else if $size == h5 and $device == desktop {
+    font-size: 18px;
+    line-height: 140%;
+  } @else if $size == h5 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+@mixin typeface-2($size, $p2, $device: desktop) {
+  font-family: "Raleway", sans-serif;
+
+  // p1
+  @if $size == p1 and $device == desktop {
+    font-size: 24px;
+    line-height: 130%;
+  } @else if $size == p1 and $device == mobile {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  // p2
+  @else if $size == p2 and $device == desktop {
+    font-size: 16px;
+    line-height: 150%;
+  } @else if $size == p2 and $device == mobile {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  // p3
+  @else if $size == p3 and $device == desktop {
+    font-size: 16px;
+    line-height: 150%;
+  } @else if $size == p3 and $device == mobile {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+h1 {
+  color: $blue-50;
+  @include typeface-1(h1, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h1, mobile);
+  }
+}
+
+h2 {
+  color: $blue-50;
+  @include typeface-1(h2, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h2, mobile);
+  }
+}
+
+h3 {
+  color: $blue-50;
+  @include typeface-1(h3, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h3, mobile);
+  }
+}
+
+h4 {
+  color: $blue-50;
+  @include typeface-1(h4, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h4, mobile);
+  }
+}
+
+h5 {
+  display: inline-block;
+  font-weight: 700;
+  background: linear-gradient(221deg, $blue-300 0%, $green-300 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include typeface-1(h5, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h5, mobile);
+  }
+}
+
+.feedback-name {
+  background: linear-gradient(221deg, $blue-300 0%, $green-300 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  color: $gray-10;
+  font-weight: 400;
+
+  @include typeface-2(p2, desktop);
+  @include responsive(s) {
+    @include typeface-2(p2, mobile);
+  }
+}
+
+.p1 {
+  font-size: 24px;
+  color: $blue-50;
+  font-weight: regular;
+  line-height: 130%;
+}
+
+.bold {
+  font-weight: bold;
+  color: $gray-10;
+}
+
+strong {
+  color: $blue-50;
+  @include typeface-2(p2, desktop);
+  @include responsive(s) {
+    @include typeface-2(p2, mobile);
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.weight-light {
+  font-weight: 300;
+}
+
+.left-detail {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, #44c8ff 0%, #9dfff3 100%);
+    left: 0;
+    top: 0;
+  }
+}
+
+.right-detail {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(180deg, #44c8ff 0%, #9dfff3 100%);
+    right: -64px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+.list-title {
+  color: var(--primary-blue-100, #88deff);
+  /* Body/B4-bold */
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+}
+
+.method-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: $gray-10;
+}

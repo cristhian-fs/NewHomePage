@@ -1,0 +1,109 @@
+.box {
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: 112px 24px;
+  @include responsive(s) {
+    padding: 32px 16px 32px 16px;
+  }
+}
+
+.box p {
+  width: 100%;
+}
+.swiper-box {
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: 48px 24px;
+  @include responsive(s) {
+    padding: 32px 16px 32px 16px;
+  }
+}
+.box1 {
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: 112px 24px 0px 24px;
+
+  @include responsive(s) {
+    padding: 32px 16px 0px 16px;
+  }
+}
+.box2 {
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: 0px 24px 112px 24px;
+
+  @include responsive(s) {
+    padding: 0px 16px 32px 16px;
+  }
+}
+
+.box2 p {
+  width: 100%;
+}
+
+.container-swiper {
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: 64px 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper {
+  position: relative;
+}
+
+.swiper-slide {
+  max-width: 360px;
+  height: 100%;
+  padding: 24px 24px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid var(--grayscale-gray-70, #565c5e);
+  background: radial-gradient(
+    155.44% 141.42% at 100% 0%,
+    #414547 0%,
+    #1a1b1c 100%
+  );
+}
+
+.button-next {
+  position: absolute;
+  right: 32px;
+  top: -50px;
+  width: 36px;
+  height: 36px;
+
+  cursor: pointer;
+  background-image: url("../svg/icon-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.button-prev {
+  position: absolute;
+  right: 88px;
+  top: -50px;
+  width: 36px;
+  height: 36px;
+
+  background-image: url("../svg/icon-arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.photo-profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-image: url("../svg/User-icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

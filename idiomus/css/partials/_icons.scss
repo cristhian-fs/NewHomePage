@@ -1,0 +1,120 @@
+.list-item {
+  list-style: none;
+  position: relative;
+  padding: 8px 8px 8px 48px;
+  margin-bottom: 32px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0, -50%);
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+}
+.list-item2 {
+  list-style: none;
+  position: relative;
+  padding: 8px 8px 8px 48px;
+  margin-bottom: 32px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0, 0);
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.bg-icon-check {
+  &::after {
+    background-image: url("../svg/icon-check.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    filter: drop-shadow(0px 4px 20px rgba(136, 222, 255, 0.35));
+  }
+}
+
+.bg-icon-slider {
+  &::after {
+    background-image: url("../svg/icon-slider.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    filter: drop-shadow(0px 4px 20px rgba(136, 222, 255, 0.35));
+  }
+}
+.bg-icon-wifi {
+  &::after {
+    background-image: url("../svg/icon-wifi.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    filter: drop-shadow(0px 4px 20px rgba(136, 222, 255, 0.35));
+  }
+}
+.bg-icon-help {
+  &::after {
+    background-image: url("../svg/icon-help.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    filter: drop-shadow(0px 4px 20px rgba(136, 222, 255, 0.35));
+  }
+}
+.bg-icon-book-open {
+  &::after {
+    background-image: url("../svg/icon-Book-open.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    filter: drop-shadow(0px 4px 20px rgba(136, 222, 255, 0.35));
+  }
+}
+.bg-icon-Moon {
+  &::after {
+    background-image: url("../svg/icon-Moon.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    filter: drop-shadow(0px 4px 20px rgba(136, 222, 255, 0.35));
+  }
+}
+.bg-icon-File-text {
+  &::after {
+    background-image: url("../svg/icon-File-text.svg");
+    background-size: cover;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    filter: drop-shadow(0px 4px 20px rgba(136, 222, 255, 0.35));
+  }
+}
