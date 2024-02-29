@@ -1,0 +1,47 @@
+.swiper {
+  overflow-y: visible !important;
+
+  @include responsive(s) {
+    padding-top: 48px !important;
+
+    & .button-prev {
+      position: absolute;
+      top: 0;
+      left: 032px;
+    }
+
+    & .button-next {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+  }
+}
+
+.button-prev {
+  width: 32px;
+  height: 32px;
+  background-image: url("../svg/arrow-left.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  bottom: -32px;
+  left: 032px;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.button-next {
+  width: 32px;
+  height: 32px;
+  background-image: url("../svg/arrow-right.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  bottom: -32px;
+  right: 0px;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}

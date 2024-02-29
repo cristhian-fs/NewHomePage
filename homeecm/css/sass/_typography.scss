@@ -1,0 +1,364 @@
+// Typography of project
+
+//IMPORTING FONTS
+
+@mixin typeface-1($size, $device: desktop) {
+  font-family: "Poppins", sans-serif;
+
+  @if $size == h1 and $device == desktop {
+    font-size: 48px;
+    line-height: 110%;
+    font-weight: 500;
+  } @else if $size == h1 and $device == mobile {
+    font-size: 32px;
+    line-height: 110%;
+    font-weight: 500;
+  } @else if $size == h1 and $device == smallmobile {
+    font-size: 32px;
+    line-height: 110%;
+    font-weight: 500;
+  } @else if $size == h2 and $device == desktop {
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: normal;
+  } @else if $size == h2 and $device == mobile {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: normal;
+  } @else if $size == h2 and $device == smallmobile {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: normal;
+  } @else if $size == h3 and $device == desktop {
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: 500;
+  } @else if $size == h3 and $device == mobile {
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: 500;
+  } @else if $size == h3 and $device == smallmobile {
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: normal;
+  } @else if $size == h4 and $device == desktop {
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: normal;
+  } @else if $size == h4 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: normal;
+  } @else if $size == h4 and $device == smallmobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: normal;
+  } @else if $size == h5 and $device == desktop {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+    text-transform: uppercase;
+  } @else if $size == h5 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+@mixin typeface-2($size: p2, $device: desktop) {
+  font-family: "Poppins", sans-serif;
+
+  @if $size == p1 and $device == desktop {
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: normal;
+  } @else if $size == p1 and $device == mobile {
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: normal;
+  } @else if $size == p1 and $device == smallmobile {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: bold;
+  } @else if $size == p2 and $device == desktop {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+  } @else if $size == p2 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+  } @else if $size == p3 and $device == desktop {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: normal;
+  } @else if $size == p3 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: normal;
+  } @else if $size == p3 and $device == smallmobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: normal;
+  } @else if $size == p4 and $device == desktop {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: normal;
+    letter-spacing: 2.1px;
+  } @else if $size == p4 and $device == mobile {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: normal;
+    letter-spacing: 2.1px;
+  } @else if $size == p5 and $device == desktop {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: normal;
+  } @else if $size == p5 and $device == mobile {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: normal;
+  }
+}
+
+.h0 {
+  @include typeface-1(h0, desktop);
+  letter-spacing: 20px;
+
+  @include responsive(s) {
+    @include typeface-1(h0, mobile);
+    letter-spacing: 10px;
+  }
+
+  @include responsive(xs) {
+    @include typeface-1(h0, smallmobile);
+    letter-spacing: 8px;
+  }
+}
+
+h1 {
+  display: inline-block;
+  color: $primary-orange-10;
+  z-index: 5;
+  @include typeface-1(h1, desktop);
+  @include responsive(s) {
+    @include typeface-1(h1, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-1(h1, smallmobile);
+  }
+}
+
+h2 {
+  color: $primary-orange-20;
+  @include typeface-1(h2, desktop);
+  @include responsive(s) {
+    @include typeface-1(h2, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-1(h2, smallmobile);
+  }
+}
+
+h3 {
+  color: $primary-orange-10;
+  @include typeface-1(h3, desktop);
+  @include responsive(s) {
+    @include typeface-1(h3, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-1(h3, smallmobile);
+  }
+}
+
+h4 {
+  color: $gray-2;
+  @include typeface-1(h4, desktop);
+  @include responsive(s) {
+    @include typeface-1(h4, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-1(h4, smallmobile);
+  }
+}
+
+h5 {
+  display: inline-block;
+
+  @include typeface-1(h5, desktop);
+  @include responsive(s) {
+    @include typeface-1(h5, mobile);
+  }
+  white-space: nowrap;
+}
+
+p {
+  letter-spacing: 0px;
+  color: $gray-7;
+  @include typeface-2(p3, desktop);
+  @include responsive(s) {
+    @include typeface-2(p3, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-2(p3, smallmobile);
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.p1 {
+  color: $primary-orange-10;
+  @include typeface-2(p1, desktop);
+  @include responsive(s) {
+    @include typeface-2(p1, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-2(p1, smallmobile);
+  }
+}
+
+.p2 {
+  color: $gray-2;
+  @include typeface-2(p2, desktop);
+  @include responsive(s) {
+    @include typeface-2(p2, mobile);
+  }
+}
+
+.p3 {
+  color: $gray-3;
+  @include typeface-2(p3, desktop);
+  @include responsive(s) {
+    @include typeface-2(p3, mobile);
+  }
+}
+
+.p4 {
+  color: $gray-1;
+  @include typeface-2(p4, desktop);
+  @include responsive(s) {
+    @include typeface-2(p4, mobile);
+  }
+}
+
+.p5 {
+  color: $gray-1;
+  @include typeface-2(p5, desktop);
+  @include responsive(s) {
+    @include typeface-2(p5, mobile);
+  }
+}
+
+.p-title {
+  font-size: 18px;
+
+  @include responsive(s) {
+    font-size: 16px;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+span {
+  display: inline-block;
+}
+
+b {
+  color: $gray-2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hbig {
+  @include typeface-1(hbig, desktop);
+  @include responsive(s) {
+    @include typeface-1(hbig, mobile);
+  }
+}
+
+.jobIndex {
+  color: rgba(152, 149, 166, 0.7);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 35.2px */
+}
+
+.expertArea {
+  color: $gray-4;
+  font-weight: normal;
+  line-height: 110%;
+}
+
+.avaliableJob {
+  background: linear-gradient(86deg, #33ce30 0%, #82eb80 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #26bf23;
+    box-shadow: 0px 2px 10px 0px rgba(38, 191, 35, 0.5);
+  }
+}
+
+.description {
+  color: $gray-4;
+}
+
+.footerLink {
+  color: $gray-4;
+  transition: all 500ms ease;
+
+  &:hover {
+    color: $gray-2;
+  }
+}
+
+.personSince {
+  color: $gray-4;
+}
+.priceDestaque {
+  @include typeface-1(h1, desktop);
+  background: var(
+    --gradient-gradient-01,
+    linear-gradient(270deg, #edbf95 0%, #d6843a 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.featureText {
+  color: $gray-1;
+}
+
+.footerDesc {
+  color: $gray-5;
+}

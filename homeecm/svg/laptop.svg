@@ -1,0 +1,42 @@
+<svg width="800" height="447" viewBox="0 0 800 447" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="laptop">
+<g id="tela" class="telaLaptop">
+<path id="Rectangle 3" d="M75.9814 13.8147C75.9814 6.18505 82.1665 0 89.7962 0H710.229C717.859 0 724.044 6.18508 724.044 13.8148V438.022H75.9814V13.8147Z" x="0" y="0" fill="#2C2C2C"/>
+<path id="Rectangle 4" d="M81.0049 14.1502C81.0049 8.60139 85.5031 4.10315 91.052 4.10315H709.201C714.749 4.10315 719.248 8.60139 719.248 14.1502V420.583H81.0049V14.1502Z" fill="black"/>
+<g id="conteudo" width="602.826" height="369.858">
+  <!-- Defina um clip-path para o grupo -->
+  <clipPath id="clip-conteudo">
+    <rect x="100" y="20"  width="602.826" height="369.858"/>
+  </clipPath>
+  <!-- Aplique o clip-path ao grupo -->
+  <g clip-path="url(#clip-conteudo)">
+    <rect class="conteudo" width="602.826" height="369.858" transform="translate(98.5879 30.355)" fill="#0F0F10"/>
+    <image class="conteudoImage" x="100" y="20" href="img/dashLaptopPreview.webp" width="602" height="771"/>
+  </g>
+</g>
+</g>
+<g id="carca&#195;&#167;a">
+<path id="Rectangle 5" d="M0 433.458H800V437.69C800 437.69 763.566 446.154 722.222 446.154C680.879 446.154 119.121 445.731 77.7778 445.731C36.4341 445.731 0 437.69 0 437.69V433.458Z" fill="url(#paint0_linear_311_2055)"/>
+<path id="Rectangle 6" d="M0 433.615C0 433.268 0.28114 432.987 0.627943 432.987H799.372C799.719 432.987 800 433.268 800 433.615V437.69H0V433.615Z" fill="url(#paint1_linear_311_2055)"/>
+<path id="Rectangle 7" d="M340.568 432.987H459.948V432.987C459.948 435.584 457.843 437.69 455.246 437.69H345.271C342.674 437.69 340.568 435.584 340.568 432.987V432.987Z" fill="url(#paint2_linear_311_2055)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_311_2055" x1="400" y1="433.458" x2="400" y2="446.154" gradientUnits="userSpaceOnUse">
+<stop stop-color="#80868A"/>
+<stop offset="1" stop-color="#2A2C2F"/>
+</linearGradient>
+<linearGradient id="paint1_linear_311_2055" x1="1.68042e-06" y1="435.338" x2="800" y2="435.338" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2A2C2F"/>
+<stop offset="0.208333" stop-color="#80868A"/>
+<stop offset="0.770833" stop-color="#80868A"/>
+<stop offset="1" stop-color="#2A2C2F"/>
+</linearGradient>
+<linearGradient id="paint2_linear_311_2055" x1="340.568" y1="435.338" x2="459.948" y2="435.338" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2A2C2F"/>
+<stop offset="0.229167" stop-color="#80868A"/>
+<stop offset="0.802083" stop-color="#80868A"/>
+<stop offset="1" stop-color="#2A2C2F"/>
+</linearGradient>
+</defs>
+</svg>

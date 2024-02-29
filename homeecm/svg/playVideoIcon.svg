@@ -1,0 +1,18 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="playVideoIcon">
+<g id="Ellipse 2" filter="url(#filter0_b_311_344)">
+<circle cx="24" cy="24" r="24" fill="#40230A" fill-opacity="0.2"/>
+<circle cx="24" cy="24" r="23.5" stroke="#40230A" stroke-opacity="0.35"/>
+</g>
+<circle id="Ellipse 1" cx="24" cy="24" r="16" fill="#D6843A"/>
+<path id="Vector" d="M19 15L33 24L19 33V15Z" fill="#F5D5B8"/>
+</g>
+<defs>
+<filter id="filter0_b_311_344" x="-10" y="-10" width="68" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_311_344"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_311_344" result="shape"/>
+</filter>
+</defs>
+</svg>
