@@ -1,0 +1,21 @@
+.faqAnswer {
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.5s all ease;
+  opacity: 0;
+}
+.faqAnswer.active {
+  margin-top: 16px;
+  max-height: 500px;
+  opacity: 1;
+}
+
+.faqIcon {
+  transition: 0.5s all ease;
+}
+
+.faqButton.active {
+  .faqIcon {
+    transform: rotate(45deg);
+  }
+}

@@ -35,73 +35,337 @@
   <script src="../js/svg-inject.min.js"></script>
 </head>
 
-<body class="bg-white-light dark:bg-blue-90">
-  <header>
-    <nav class="flex justify-between p-2 border-b border-white-dark dark:border-black-light">
+<body class="bg-white-light dark:bg-blue-90 w-full overflow-x-hidden">
+  <header class="fixed top-0 left-0 w-full z-50 border-b border-white-dark dark:border-black-light bg-[rgba(247,247,252,0.8)] dark:bg-[rgba(4,5,20,0.8)] backdrop-blur">
+    <nav class="flex justify-between p-2 relative lg:max-w-screen-xl lg:mx-auto">
       <span class="text-base font-bold uppercase text-blue-90 dark:text-blue-10">CRISTHIAN F.</span>
-      <div class="flex items-center justify-center gap-2">
+      <div class="items-center justify-center gap-4 hidden lg:flex">
         <a href="">
-          <button class="flex items-center justify-center gap-2 px-2 py-1 transition-all duration-200 hover:bg-blue-10  rounded-md">
-            <p class="text-sm text-blue-40">Solicitar projeto</p>
-            <img src="svg/chevron-right.svg" alt="" onload="SVGInject(this)">
+          <button class="mouseFollowBtn p-1 transition-all duration-200 hover:bg-blue-10 dark:hover:bg-black-light rounded-md">
+            <p class="text-sm text-gray-60 dark:text-gray-40">Sobre</p>
           </button>
         </a>
-        <button class="p-1 flex items-center justify-center relative bg-white-dark rounded-md dark:bg-black-light ">
+        <a href="">
+          <button class="mouseFollowBtn p-1 transition-all duration-200 hover:bg-blue-10 dark:hover:bg-black-light rounded-md">
+            <p class="text-sm text-gray-60 dark:text-gray-40">Cases</p>
+          </button>
+        </a>
+        <a href="">
+          <button class="mouseFollowBtn p-1 transition-all duration-200 hover:bg-blue-10 dark:hover:bg-black-light rounded-md">
+            <p class="text-sm text-gray-60 dark:text-gray-40">Feedbacks</p>
+          </button>
+        </a>
+        <a href="">
+          <button class="mouseFollowBtn p-1 transition-all duration-200 hover:bg-blue-10 dark:hover:bg-black-light rounded-md">
+            <p class="text-sm text-gray-60 dark:text-gray-40">Processos</p>
+          </button>
+        </a>
+      </div>
+      <div class="flex items-center justify-center gap-2">
+        <a href="" class="mouseFollowBtn">
+          <button class="flex items-center justify-center gap-2 px-2 py-1 transition-all duration-200 hover:bg-blue-10 dark:hover:bg-black-light rounded-md">
+            <p class="text-sm text-blue-40">Solicitar projeto</p>
+            <img src="svg/chevron-right.svg" class="stroke-blue-40" alt="" onload="SVGInject(this)">
+          </button>
+        </a>
+        <button class="toggleThemeButton p-1 flex items-center justify-center relative bg-white-dark rounded-md dark:bg-black-light ">
           <img src="svg/sun.svg" class="stroke-black-normal dark:stroke-white-dark" alt="" onload="SVGInject(this)">
         </button>
       </div>
+      <div class="optionsTheme bg-white-normal border border-white-dark dark:border-black-light dark:bg-black-normal flex flex-col p-2 absolute top-14 right-2 rounded-lg">
+        <button data-theme="light" class="flex items-center justify-start py-2 px-3 gap-2 transition-all duration-300 hover:bg-white-light dark:hover:bg-black-light rounded-lg">
+          <img src="svg/sun.svg" class="stroke-gray-90 dark:stroke-gray-20" alt="" onload="SVGInject(this)">
+          <p class="text-sm text-gray-80 dark:text-gray-20">Tema claro</p>
+        </button>
+        <button data-theme="dark" class="flex items-center justify-start py-2 px-3 gap-2 transition-all duration-300 hover:bg-white-light dark:hover:bg-black-light rounded-lg">
+          <img src="svg/moon.svg" class="stroke-gray-90 dark:stroke-gray-20" alt="" onload="SVGInject(this)">
+          <p class="text-sm text-gray-80 dark:text-gray-20">Tema escuro</p>
+        </button>
+        <button data-theme="system" class="flex items-center justify-start py-2 px-3 gap-2 transition-all duration-300 hover:bg-white-light dark:hover:bg-black-light rounded-lg">
+          <img src="svg/monitor.svg" class="stroke-gray-90 dark:stroke-gray-20" alt="" onload="SVGInject(this)">
+          <p class="text-sm text-gray-80 dark:text-gray-20">Sistema</p>
+        </button>
+      </div>
     </nav>
+
   </header>
 
   <!-- MAIN CONTENT -->
   <main>
-    <section id="hero" class="px-4 py-24 flex items-center justify-center flex-col">
-      <h1 class="text-center text-5xl font-medium text-balance gradient-h1-hero">Destacando marcas no digital</h1>
-      <p class="text-center text-lg text-gray-60 mt-6">Desenvolvimento de interfaces alto nível para empresas onde a atenção aos pequenos detalhes e a dedicação são importantes.</p>
+    <section id="hero" class="px-4 py-24 flex items-center justify-center flex-col lg:max-w-screen-xl lg:mx-auto">
+      <h1 class="text-center text-5xl lg:text-8xl font-medium text-balance gradient-h1-hero pb-3">Destacando marcas no digital</h1>
+      <p class="text-center text-lg text-gray-60 dark:text-gray-30 mt-6 lg:w-1/2">Desenvolvimento de interfaces alto nível para empresas onde a atenção aos pequenos detalhes e a dedicação são importantes.</p>
       <a href="">
-        <button class="flex items-center justify-center gap-2 px-2 py-1 mt-6 transition-all duration-200 hover:bg-blue-10 rounded-md">
-          <p class="text-base text-blue-40">Solicitar projeto</p>
-          <img src="svg/chevron-right.svg" alt="" onload="SVGInject(this)">
+        <button class="mouseFollowBtn flex items-center justify-center gap-2 px-2 py-1 mt-6 transition-all duration-200 hover:bg-blue-10 dark:hover:bg-black-light rounded-md group">
+          <p class="text-base lg:text-lg text-blue-40">Solicitar projeto</p>
+          <img src="svg/chevron-right.svg" class="transition-all duration-200 stroke-blue-40" alt="" onload="SVGInject(this)">
         </button>
       </a>
+
     </section>
-    <section class="px-4 py-24 flex items-start justify-center flex-col">
-      <div class="relative">
-        <div class="blueRect"></div>
-        <div class="square topLeft"></div>
-        <div class="square topRight"></div>
-        <div class="square bottomLeft"></div>
-        <div class="square bottomRight"></div>
-        <img src="svg/arrowAnim.svg" onload="SVGInject(this)" alt="" class="arrow-s2-anim">
-        <h3 class="text-gray-100 text-balance text-2xl">
-          Sou um UI designer e apaixonado por desenvolvimento web e front-end. <br />
-          Minha missão é ajudar startups e experts na criação de websites, trazendo a experiência do usuário como prioridade.
-        </h3>
-      </div>
-      <div class="flex items-center gap-2 mt-6">
-        <a href="">
-          <button class="flex items-center p-1">
-            <img src="svg/instagram logo.svg" alt="" onload="SVGInject(this)">
-          </button>
-        </a>
-        <a href="">
-          <button class="flex items-center p-1">
-            <img src="svg/behance logo.svg" alt="" onload="SVGInject(this)">
-          </button>
-        </a>
-      </div>
-    </section>
-    <section class="px-4 py-24 flex items-start justify-center flex-col">
-      <h2 class="text-4xl text-center text-black-light">
+    <div class="relative figmaPinWrapper">
+      <section class="flex items-center justify-center flex-col figmaLoadingScreen h-screen relative z-10 pointer-events-none">
+        <div class="w-full h-full bg-[#181818] dark:bg-[#f7f7f7] flex items-center rounded-2xl flex-col justify-center relative z-10">
+          <img src="svg/figma.svg" class="stroke-white-light dark:stroke-black-light" onload="SVGInject(this)" alt="">
+          <div class="bars mt-5">
+            <span class="barGray"></span>
+            <span class="barWhite"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section02 px-4 py-24 lg:px-0 lg:py-32 h-screen flex items-center justify-center lg:max-w-screen-xl lg:mx-auto absolute inset-0 z-0">
+        <div class="flex items-start justify-center flex-col">
+          <div class="relative lg:w-2/3">
+            <div class="blueRect"></div>
+            <div class="square topLeft"></div>
+            <div class="square topRight"></div>
+            <div class="square bottomLeft"></div>
+            <div class="square bottomRight"></div>
+
+            <h3 class="text-gray-100 text-2xl lg:text-3xl dark:text-white-light toggleFont">
+              Sou um UI designer e, <b>apaixonado</b> por desenvolvimento web e front-end. <br />
+              Minha missão é <b>ajudar</b> startups e experts na criação de websites, trazendo a <b>experiência do usuário</b> como prioridade.
+            </h3>
+          </div>
+          <img src="svg/arrowAnim.svg" onload="SVGInject(this)" alt="" class="arrow-s2-anim">
+          <div class="flex items-center gap-2 mt-6">
+            <a href="">
+              <button class="flex items-center p-1">
+                <img src="svg/instagram logo.svg" alt="" onload="SVGInject(this)">
+              </button>
+            </a>
+            <a href="">
+              <button class="flex items-center p-1">
+                <img src="svg/behance logo.svg" alt="" onload="SVGInject(this)">
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="relative flex items-center flex-col justify-center">
+          <img src="/svg/Figma Text UI2.svg" class="hidden lg:block drop-shadow-xl" alt="" onload="SVGInject(this)">
+          <div class="hidden lg:block relative drop-shadow-xl">
+            <div class="absolute top-[59px] left-[28px] z-10">
+              <input type="color" id="colorInput" class="colorinput" value="#030014">
+              <label for="colorInput" class="colorInputText ml-2"></label>
+            </div>
+            <img src="/svg/Figma Color UI2.svg" class="" alt="" onload="SVGInject(this)">
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- CASES -->
+    <section class="px-4 lg:px-0 py-24 lg:py-32 flex items-start lg:items-center justify-center flex-col lg:max-w-screen-xl lg:mx-auto">
+      <h2 class="text-4xl lg:text-5xl lg:w-1/2 text-center text-black-light dark:text-white-light">
         Uma pequena seleção dos meus trabalhos
       </h2>
-      <div class="jobs flex items-center justify-center gap-4">
-        <div class="w-full h-[190px] relative bg-gradient-to-r from-[#5E56F2] to-[#847EF1]">
-          <img src="/img/PagEasyPreviewHero.png" class="image-job w-[80%]" alt="">
+      <div class="jobs flex items-center w-full flex-col lg:flex-row lg:flex-wrap justify-center gap-4 lg:gap-8 mt-12">
+        <a href="https://pageasy.cristhiandesigner.com" target=”_blank”>
+          <div class="w-full lg:w-[592px] h-[190px] lg:h-[312px] flex items-center overflow-hidden justify-center relative bg-gradient-to-r from-[#5E56F2] to-[#847EF1] rounded-2xl caseUI">
+            <img src="/img/PagEasyPreviewHero.png" class="w-[90%] absolute top-9 rounded-lg" alt="">
+          </div>
+        </a>
+        <a href="https://csseasy.com.br" target=”_blank”>
+          <div class="w-full lg:w-[592px] h-[190px] lg:h-[312px] flex items-center overflow-hidden justify-center relative bg-gradient-to-r from-[#2030D9] to-[#757FEB] rounded-2xl caseUI">
+            <img src="/img/CSSeasyPreviewHero.png" class="w-[90%] absolute top-9 rounded-lg" alt="">
+          </div>
+        </a>
+        <a href="" target=”_blank”>
+          <div class="w-full lg:w-[592px] h-[190px] lg:h-[312px] flex items-center overflow-hidden justify-center relative bg-gradient-to-r from-[#D6843A] to-[#EDBF95] rounded-2xl caseUI">
+            <img src="/img/ECMPreviewHero.png" class="w-[90%] absolute top-9 rounded-lg" alt="">
+          </div>
+        </a>
+        <a href="" target=”_blank”>
+          <div class="w-full lg:w-[592px] h-[190px] lg:h-[312px] flex items-center overflow-hidden justify-center relative bg-gradient-to-r from-[#06B1FF] to-[#88DEFF] rounded-2xl caseUI">
+            <img src="/img/idiomusPreviewHero.png" class="w-[90%] absolute top-9 rounded-lg" alt="">
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- FEEDBACKS SECTION -->
+    <section class="px-4 lg:px-0 py-24 lg:py-32 flex items-start lg:items-center justify-center flex-col lg:max-w-screen-lg lg:mx-auto">
+      <h2 class="text-4xl lg:text-5xl lg:w-2/3 text-center text-balance text-black-light dark:text-white-light">
+        Depoimentos de clientes sobre meu trabalho
+      </h2>
+      <div class="flex items-center flex-col lg:flex-row lg:justify-start justify-center gap-4 mt-8">
+        <!-- TESTIMONIAL ITEM -->
+        <div class="flex flex-col items-start justify-start lg:flex-1 self-stretch p-8 bg-white-light border border-white-dark rounded-2xl drop-shadow-xl dark:bg-black-normal dark:border-black-light">
+          <div class="flex items-center justify-center gap-4">
+            <img src="/img/anaBarreto.jpg" class="w-8 rounded-full h-8 object-cover" alt="">
+            <div>
+              <p class="text-base text-gray-70 font-bold dark:text-gray-10">Ana Barreto</p>
+              <p class="text-sm text-gray-60 dark:text-gray-30">Líder dōTERRA</p>
+            </div>
+          </div>
+          <p class="text-base text-gray-60 mt-4 dark:text-gray-30">
+            Cristhian, boa tarde! Senti no meu coração de te dizer isso, estamos 2 anos trabalhando juntos, e quero te agradecer por toda excelência no seu trabalho! Obrigada pelo capricho e comprometimento!!! Da pra ver que você faz com gosto sabe? Temos um carinho enorme por você, vou indicar seu trabalho sempre que eu puder!!!
+          </p>
+        </div>
+        <!-- TESTIMONIAL ITEM -->
+        <div class="flex flex-col items-start justify-start lg:flex-1 self-stretch p-8 bg-white-light border border-white-dark rounded-2xl drop-shadow-xl dark:bg-black-normal dark:border-black-light">
+          <div class="flex items-center justify-center gap-4">
+            <img src="/img/ivanaSouza.jpg" class="w-8 rounded-full h-8 object-cover" alt="">
+            <div>
+              <p class="text-base text-gray-70 font-bold dark:text-gray-10">Ivana Souza</p>
+              <p class="text-sm text-gray-60 dark:text-gray-30">Infoprodutora</p>
+            </div>
+          </div>
+          <p class="text-base text-gray-60 mt-4 dark:text-gray-30">
+            Cris, nós ficamos muito felizes com o seu trabalho. Você foi muito ágil na hora de fazer as páginas a muito prestativo mesmo depois de ter finalizado o serviço. Obrigada 🥰
+          </p>
         </div>
       </div>
     </section>
+
+    <!-- STEPS -->
+    <section class="px-4 lg:px-0 py-24 lg:py-32 flex items-start lg:items-center justify-center flex-col lg:max-w-screen-lg lg:mx-auto">
+      <h2 class="text-4xl lg:text-5xl lg:w-2/3 text-center text-balance text-black-light dark:text-white-light">
+        Processos para destacar sua marca
+      </h2>
+      <div class="p-8 relative overflow-hidden flex items-center justify-center gap-14 bg-white-light rounded-2xl drop-shadow-lg mt-4 lg:mt-12 dark:bg-black-normal lg:w-[592px]">
+        <span class="flex items-center lg:hidden justify-center w-8 h-8 bg-white-dark dark:bg-black-light rounded-bl-md absolute top-0 right-0 text-gray-80 dark:text-gray-20">1</span>
+        <h1 class="text-center hidden lg:block lg:text-8xl font-medium gradient-h1-hero pb-3">1</h1>
+        <div class="flex flex-col justify-start gap-2">
+          <h3 class="text-2xl text-gray-80 dark:text-gray-20">
+            Entendimento do projeto
+          </h3>
+          <p class="text-base text-gray-60 dark:text-gray-40">
+            A partir da solicitação do projeto, eu procuro entender a fundo o que você está procurando, e isso me ajuda a definir se sou a pessoa certa para o trabalho. A partir daí, pode ser feita uma chamada ou o envio de um briefing para aprofundar nos detalhes do projeto
+          </p>
+        </div>
+      </div>
+      <div class="p-8 relative overflow-hidden flex items-center justify-center gap-14 bg-white-light rounded-2xl drop-shadow-lg mt-4 dark:bg-black-normal lg:w-[592px]">
+        <span class="flex items-center lg:hidden justify-center w-8 h-8 bg-white-dark dark:bg-black-light rounded-bl-md absolute top-0 right-0 text-gray-80 dark:text-gray-20">2</span>
+        <h1 class="text-center hidden lg:block lg:text-8xl font-medium gradient-h1-hero pb-3">2</h1>
+        <div class="flex flex-col justify-start gap-2">
+          <h3 class="text-2xl text-gray-80 dark:text-gray-20">
+            Protótipos e wireframe
+          </h3>
+          <p class="text-base text-gray-60 dark:text-gray-40">
+            Depois de contextualizado os objetivos e necessidades do projeto, são feitos os primeiros protótipos antes do design final para validação de ideias.
+          </p>
+        </div>
+      </div>
+      <div class="p-8 relative overflow-hidden flex items-center justify-center gap-14 bg-white-light rounded-2xl drop-shadow-lg mt-4 dark:bg-black-normal lg:w-[592px]">
+        <span class="flex items-center lg:hidden justify-center w-8 h-8 bg-white-dark dark:bg-black-light rounded-bl-md absolute top-0 right-0 text-gray-80 dark:text-gray-20">3</span>
+        <h1 class="text-center hidden lg:block lg:text-8xl font-medium gradient-h1-hero pb-3">3</h1>
+        <div class="flex flex-col justify-start gap-2">
+          <h3 class="text-2xl text-gray-80 dark:text-gray-20">
+            Design final
+          </h3>
+          <p class="text-base text-gray-60 dark:text-gray-40">
+            Após aprovado os primeiros protótipos, são feitos todos os testes e variações para chegar no resultado mais agradável e intuitivo para o usuário final.
+          </p>
+        </div>
+      </div>
+      <div class="p-8 relative overflow-hidden flex items-center justify-center gap-14 bg-white-light rounded-2xl drop-shadow-lg mt-4 dark:bg-black-normal lg:w-[592px]">
+        <span class="flex items-center lg:hidden justify-center w-8 h-8 bg-white-dark dark:bg-black-light rounded-bl-md absolute top-0 right-0 text-gray-80 dark:text-gray-20">4</span>
+        <h1 class="text-center hidden lg:block lg:text-8xl font-medium gradient-h1-hero pb-3">4</h1>
+        <div class="flex flex-col justify-start gap-2">
+          <h3 class="text-2xl text-gray-80 dark:text-gray-20">
+            Implementação
+          </h3>
+          <p class="text-base text-gray-60 dark:text-gray-40">
+            Através de código puro, frameworks ou ferramentas no-code, é feita a implementação da interface com boas práticas de desenvolvimento e micro-interações para conseguir o dinamismo necessário e interatividade.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="px-4 lg:px-0 py-24 lg:py-32 flex items-start lg:items-center justify-center flex-col lg:max-w-screen-lg lg:mx-auto">
+      <h2 class="text-4xl lg:text-5xl lg:w-2/3 text-center text-black-light dark:text-white-light">
+        Perguntas Frequentes
+      </h2>
+      <div class="flex flex-col items-center w-full mt-12">
+        <div index="0" class="w-full border-b border-white-dark dark:border-black-light cursor-pointer pb-4 faqButton lg:w-[592px]">
+          <div class="flex items-center justify-between p-4 pb-0">
+            <p class="text-base lg:text-lg text-gray-90 dark:text-gray-20">Como funciona o pagamento?</p>
+            <img src="/svg/plus.svg" class="faqIcon dark:stroke-gray-20 stroke-gray-90" alt="" onload="SVGInject(this)">
+          </div>
+          <p class="text-base text-gray-60 text-balance dark:text-gray-40 px-4 faqAnswer">
+            Antecipadamente eu solicito 50% do valor total dos projetos, e o restante é pago após o projeto estar finalizado.
+          </p>
+        </div>
+        <div index="1" class="w-full border-b border-white-dark dark:border-black-light cursor-pointer pb-4 faqButton lg:w-[592px]">
+          <div class="flex items-center justify-between p-4 pb-0">
+            <p class="text-base lg:text-lg text-gray-90 dark:text-gray-20">Tem algum limite de alterações?</p>
+            <img src="/svg/plus.svg" class="faqIcon dark:stroke-gray-20 stroke-gray-90" alt="" onload="SVGInject(this)">
+          </div>
+          <p class="text-base text-gray-60 text-balance dark:text-gray-40 px-4 faqAnswer">
+            Não há limite de alterações durante o desenvolvimento das páginas, contanto que não fuja do briefing inicial.
+          </p>
+        </div>
+        <div index="2" class="w-full border-b border-white-dark dark:border-black-light cursor-pointer pb-4 faqButton lg:w-[592px]">
+          <div class="flex items-center justify-between p-4 pb-0">
+            <p class="text-base lg:text-lg text-gray-90 dark:text-gray-20">Quais os serviços que você oferece?</p>
+            <img src="/svg/plus.svg" class="faqIcon dark:stroke-gray-20 stroke-gray-90" alt="" onload="SVGInject(this)">
+          </div>
+          <p class="text-base text-gray-60 text-balance dark:text-gray-40 px-4 faqAnswer">
+            Além das páginas, também trabalho com produção de posts e carrosséis para Instagram
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-4 lg:px-0 py-24 lg:py-32 flex items-start lg:items-center justify-center flex-col lg:max-w-screen-lg lg:mx-auto">
+      <div class="relative w-full lg:w-[800px] h-[320px] overflow-hidden rounded-2xl flex flex-col items-center justify-center bg-black-light p-4">
+        <div class="ctaDivImg w-full h-full absolute inset-0">
+          <img src="/img/ctaImageBackground.jpg" class="object-cover w-full h-full" alt="">
+        </div>
+        <h2 class="text-4xl lg:text-5xl lg:w-3/4 text-center text-white-light relative z-10">
+          Preparado para destacar sua marca no digital?
+        </h2>
+        <a href="">
+          <button class="flex items-center justify-center group gap-2 px-2 py-1 mt-6 transition-all duration-200 hover:bg-blue-10 rounded-md relative z-10">
+            <p class="text-base text-gray-10 transition-all duration-200 group-hover:text-blue-50">Solicitar projeto</p>
+            <img src="svg/chevron-right.svg" class="stroke-gray-10 group-hover:stroke-blue-50" alt="" onload="SVGInject(this)">
+          </button>
+        </a>
+      </div>
+    </section>
   </main>
+  <footer class="flex items-start lg:items-center flex-col lg:flex-row justify-between p-4 lg:max-w-screen-lg lg:mx-auto">
+    <span class="text-base font-bold uppercase text-blue-90 dark:text-blue-10">CRISTHIAN F.</span>
+    <div class="flex items-start justify-start gap-4 flex-wrap mt-6 lg:mt-0">
+      <a href="https://instagram.com/ocristhiandesigner">
+        <button class="flex items-center justify-center p-2">
+          <img src="/svg/instagram.svg" class="stroke-gray-60 transition-all duration-300 dark:stroke-gray-40 hover:stroke-gray-80 dark:hover:stroke-gray-20" alt="" onload="SVGInject(this)">
+        </button>
+      </a>
+      <a href="">
+        <button class="p-2">
+          <p class="text-base text-gray-60 dark:text-gray-40 transition-all duration-300 hover:text-gray-80 dark:hover:text-gray-20">
+            Contato
+          </p>
+        </button>
+      </a>
+      <a href="">
+        <button class="p-2">
+          <p class="text-base text-gray-60 dark:text-gray-40 transition-all duration-300 hover:text-gray-80 dark:hover:text-gray-20">
+            Política de privacidade
+          </p>
+        </button>
+      </a>
+      <a href="">
+        <button class="p-2">
+          <p class="text-base text-gray-60 dark:text-gray-40 transition-all duration-300 hover:text-gray-80 dark:hover:text-gray-20">
+            Aviso legal
+          </p>
+        </button>
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="./js/app.js"></script>
+
 </body>
 
 </html>

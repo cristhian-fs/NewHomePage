@@ -51,6 +51,34 @@
   font-style: italic;
   font-display: swap;
 }
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("../../fonts/DMSans-Regular.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sora";
+  src: url("../../fonts/Sora-Regular.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../../fonts/Raleway-Regular.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
 
 .gradient-h1-hero {
   background: linear-gradient(
@@ -58,6 +86,18 @@
     #4f5be0 -2.87%,
     #0c1578 36.07%,
     #151626 79.83%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.dark .gradient-h1-hero {
+  background: linear-gradient(
+    121deg,
+    #4f5be0 9.31%,
+    #757feb 25.99%,
+    #f7f7fc 72.26%
   );
   background-clip: text;
   -webkit-background-clip: text;
