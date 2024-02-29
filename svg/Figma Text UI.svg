@@ -1,0 +1,122 @@
+<svg width="481" height="422" viewBox="0 0 481 422" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Figma Text UI">
+<g id="Rectangle 57" filter="url(#filter0_d_1070_822)">
+<rect x="58" y="25" width="365" height="306" rx="8" fill="white"/>
+</g>
+<text id="Text" fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em"><tspan x="87" y="71.2727">Text</tspan></text>
+<g id="Text Selection" class="textSelection">
+<rect width="365" height="33" transform="translate(58 89)" fill="#F7F7FC" class="fillTextSelection"/>
+<text id="Helvetica Now Display" class="figmaUIFontType" fill="#46454C" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="87" y="111.318">Helvetica Now Display</tspan></text>
+</g>
+<text id="Font-size" fill="#46454C" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="263" y="158.318">24</tspan></text>
+<text id="Font-weight" fill="#46454C" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="87" y="158.318">Regular</tspan></text>
+<text id="Line-height" fill="#46454C" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="124" y="201.318">Auto</tspan></text>
+<text id="0" fill="#46454C" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="124" y="245.318">0</tspan></text>
+<text id="0%" fill="#46454C" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="265" y="201.318">0%</tspan></text>
+<g id="Group 10">
+<text id="A" fill="#75737F" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="92" y="200.591">A</tspan></text>
+<rect id="Rectangle 74" x="87" y="187" width="20" height="1" fill="#75737F"/>
+<rect id="Rectangle 75" x="87" y="204" width="20" height="1" fill="#75737F"/>
+</g>
+<g id="Group 11">
+<text id="A_2" fill="#75737F" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="242" y="200.591">A</tspan></text>
+<rect id="Rectangle 74_2" x="256" y="186" width="20" height="1" transform="rotate(90 256 186)" fill="#75737F"/>
+<rect id="Rectangle 75_2" x="239" y="186" width="20" height="1" transform="rotate(90 239 186)" fill="#75737F"/>
+</g>
+<g id="apps_FILL0_wght300_GRAD0_opsz24 1">
+<path id="Vector" d="M374 71.6153C373.556 71.6153 373.176 71.4572 372.859 71.1408C372.543 70.8245 372.385 70.4442 372.385 70C372.385 69.5558 372.543 69.1755 372.859 68.8591C373.176 68.5428 373.556 68.3846 374 68.3846C374.444 68.3846 374.825 68.5428 375.141 68.8591C375.457 69.1755 375.615 69.5558 375.615 70C375.615 70.4442 375.457 70.8245 375.141 71.1408C374.825 71.4572 374.444 71.6153 374 71.6153ZM380 71.6153C379.556 71.6153 379.176 71.4572 378.859 71.1408C378.543 70.8245 378.385 70.4442 378.385 70C378.385 69.5558 378.543 69.1755 378.859 68.8591C379.176 68.5428 379.556 68.3846 380 68.3846C380.444 68.3846 380.825 68.5428 381.141 68.8591C381.457 69.1755 381.615 69.5558 381.615 70C381.615 70.4442 381.457 70.8245 381.141 71.1408C380.825 71.4572 380.444 71.6153 380 71.6153ZM386 71.6153C385.556 71.6153 385.176 71.4572 384.859 71.1408C384.543 70.8245 384.385 70.4442 384.385 70C384.385 69.5558 384.543 69.1755 384.859 68.8591C385.176 68.5428 385.556 68.3846 386 68.3846C386.444 68.3846 386.825 68.5428 387.141 68.8591C387.457 69.1755 387.615 69.5558 387.615 70C387.615 70.4442 387.457 70.8245 387.141 71.1408C386.825 71.4572 386.444 71.6153 386 71.6153ZM374 65.6153C373.556 65.6153 373.176 65.4572 372.859 65.1408C372.543 64.8245 372.385 64.4442 372.385 64C372.385 63.5558 372.543 63.1755 372.859 62.8591C373.176 62.5428 373.556 62.3846 374 62.3846C374.444 62.3846 374.825 62.5428 375.141 62.8591C375.457 63.1755 375.615 63.5558 375.615 64C375.615 64.4442 375.457 64.8245 375.141 65.1408C374.825 65.4572 374.444 65.6153 374 65.6153ZM380 65.6153C379.556 65.6153 379.176 65.4572 378.859 65.1408C378.543 64.8245 378.385 64.4442 378.385 64C378.385 63.5558 378.543 63.1755 378.859 62.8591C379.176 62.5428 379.556 62.3846 380 62.3846C380.444 62.3846 380.825 62.5428 381.141 62.8591C381.457 63.1755 381.615 63.5558 381.615 64C381.615 64.4442 381.457 64.8245 381.141 65.1408C380.825 65.4572 380.444 65.6153 380 65.6153ZM386 65.6153C385.556 65.6153 385.176 65.4572 384.859 65.1408C384.543 64.8245 384.385 64.4442 384.385 64C384.385 63.5558 384.543 63.1755 384.859 62.8591C385.176 62.5428 385.556 62.3846 386 62.3846C386.444 62.3846 386.825 62.5428 387.141 62.8591C387.457 63.1755 387.615 63.5558 387.615 64C387.615 64.4442 387.457 64.8245 387.141 65.1408C386.825 65.4572 386.444 65.6153 386 65.6153ZM374 59.6153C373.556 59.6153 373.176 59.4572 372.859 59.1408C372.543 58.8245 372.385 58.4442 372.385 58C372.385 57.5558 372.543 57.1755 372.859 56.8591C373.176 56.5428 373.556 56.3846 374 56.3846C374.444 56.3846 374.825 56.5428 375.141 56.8591C375.457 57.1755 375.615 57.5558 375.615 58C375.615 58.4442 375.457 58.8245 375.141 59.1408C374.825 59.4572 374.444 59.6153 374 59.6153ZM380 59.6153C379.556 59.6153 379.176 59.4572 378.859 59.1408C378.543 58.8245 378.385 58.4442 378.385 58C378.385 57.5558 378.543 57.1755 378.859 56.8591C379.176 56.5428 379.556 56.3846 380 56.3846C380.444 56.3846 380.825 56.5428 381.141 56.8591C381.457 57.1755 381.615 57.5558 381.615 58C381.615 58.4442 381.457 58.8245 381.141 59.1408C380.825 59.4572 380.444 59.6153 380 59.6153ZM386 59.6153C385.556 59.6153 385.176 59.4572 384.859 59.1408C384.543 58.8245 384.385 58.4442 384.385 58C384.385 57.5558 384.543 57.1755 384.859 56.8591C385.176 56.5428 385.556 56.3846 386 56.3846C386.444 56.3846 386.825 56.5428 387.141 56.8591C387.457 57.1755 387.615 57.5558 387.615 58C387.615 58.4442 387.457 58.8245 387.141 59.1408C386.825 59.4572 386.444 59.6153 386 59.6153Z" fill="#0C0C0E"/>
+</g>
+<g id="apps_FILL0_wght300_GRAD0_opsz24 2">
+<path id="Vector_2" d="M374 290.615C373.556 290.615 373.176 290.457 372.859 290.141C372.543 289.824 372.385 289.444 372.385 289C372.385 288.556 372.543 288.175 372.859 287.859C373.176 287.543 373.556 287.385 374 287.385C374.444 287.385 374.825 287.543 375.141 287.859C375.457 288.175 375.615 288.556 375.615 289C375.615 289.444 375.457 289.824 375.141 290.141C374.825 290.457 374.444 290.615 374 290.615ZM380 290.615C379.556 290.615 379.176 290.457 378.859 290.141C378.543 289.824 378.385 289.444 378.385 289C378.385 288.556 378.543 288.175 378.859 287.859C379.176 287.543 379.556 287.385 380 287.385C380.444 287.385 380.825 287.543 381.141 287.859C381.457 288.175 381.615 288.556 381.615 289C381.615 289.444 381.457 289.824 381.141 290.141C380.825 290.457 380.444 290.615 380 290.615ZM386 290.615C385.556 290.615 385.176 290.457 384.859 290.141C384.543 289.824 384.385 289.444 384.385 289C384.385 288.556 384.543 288.175 384.859 287.859C385.176 287.543 385.556 287.385 386 287.385C386.444 287.385 386.825 287.543 387.141 287.859C387.457 288.175 387.615 288.556 387.615 289C387.615 289.444 387.457 289.824 387.141 290.141C386.825 290.457 386.444 290.615 386 290.615Z" fill="#0C0C0E"/>
+</g>
+<g id="expand_FILL0_wght300_GRAD0_opsz24 1">
+<path id="Vector_3" d="M90 249.2C89.7875 249.2 89.6094 249.128 89.4656 248.984C89.3219 248.84 89.25 248.662 89.25 248.45C89.25 248.237 89.3219 248.059 89.4656 247.915C89.6094 247.772 89.7875 247.7 90 247.7H104C104.212 247.7 104.391 247.772 104.534 247.916C104.678 248.059 104.75 248.238 104.75 248.45C104.75 248.663 104.678 248.841 104.534 248.985C104.391 249.128 104.212 249.2 104 249.2H90ZM96.9987 246.131C96.879 246.131 96.7673 246.111 96.6635 246.073C96.5596 246.035 96.4598 245.967 96.364 245.872L93.8731 243.381C93.7346 243.242 93.6612 243.071 93.6529 242.866C93.6445 242.662 93.7186 242.481 93.8751 242.325C94.0186 242.181 94.191 242.107 94.3923 242.102C94.5936 242.097 94.7718 242.167 94.9269 242.312L96.25 243.619V235.781L94.9269 237.088C94.7884 237.227 94.617 237.298 94.4125 237.301C94.208 237.304 94.0275 237.227 93.871 237.071C93.7275 236.927 93.6557 236.752 93.6557 236.546C93.6557 236.34 93.7282 236.164 93.8731 236.019L96.364 233.528C96.4598 233.432 96.56 233.365 96.6647 233.327C96.7694 233.288 96.8816 233.269 97.0013 233.269C97.1209 233.269 97.2327 233.288 97.3365 233.327C97.4404 233.365 97.5402 233.432 97.636 233.528L100.127 236.019C100.265 236.158 100.339 236.329 100.347 236.534C100.355 236.738 100.281 236.919 100.125 237.075C99.9813 237.219 99.8089 237.293 99.6077 237.298C99.4064 237.303 99.2282 237.233 99.0731 237.088L97.75 235.781V243.619L99.0731 242.312C99.2115 242.173 99.383 242.102 99.5875 242.099C99.792 242.096 99.9725 242.172 100.129 242.329C100.272 242.472 100.344 242.647 100.344 242.854C100.344 243.06 100.272 243.236 100.127 243.381L97.636 245.872C97.5402 245.967 97.4399 246.035 97.3352 246.073C97.2305 246.111 97.1184 246.131 96.9987 246.131ZM90 231.7C89.7875 231.7 89.6094 231.628 89.4656 231.484C89.3219 231.34 89.25 231.162 89.25 230.95C89.25 230.737 89.3219 230.559 89.4656 230.415C89.6094 230.272 89.7875 230.2 90 230.2H104C104.212 230.2 104.391 230.272 104.534 230.416C104.678 230.559 104.75 230.738 104.75 230.95C104.75 231.163 104.678 231.341 104.534 231.485C104.391 231.628 104.212 231.7 104 231.7H90Z" fill="#75737F"/>
+<path id="Vector_4" d="M89.4656 251.507C89.6094 251.651 89.7875 251.723 90 251.723H104C104.212 251.723 104.391 251.651 104.534 251.508C104.678 251.364 104.75 251.186 104.75 250.973C104.75 250.761 104.678 250.583 104.534 250.439C104.391 250.295 104.212 250.223 104 250.223H90C89.7875 250.223 89.6094 250.295 89.4656 250.438C89.3219 250.582 89.25 250.76 89.25 250.973C89.25 251.185 89.3219 251.363 89.4656 251.507Z" fill="#75737F"/>
+</g>
+<g id="Group 12">
+<rect id="Rectangle 76" x="268.25" y="236.25" width="17.5" height="0.5" fill="#75737F" stroke="#75737F" stroke-width="0.5"/>
+<rect id="Rectangle 77" x="268.25" y="240.25" width="17.5" height="0.5" fill="#75737F" stroke="#75737F" stroke-width="0.5"/>
+<rect id="Rectangle 78" x="268.25" y="244.25" width="11.5" height="0.5" fill="#75737F" stroke="#75737F" stroke-width="0.5"/>
+</g>
+<g id="Group 16">
+<rect id="Rectangle 76_2" x="89.25" y="285.25" width="17.5" height="0.5" fill="#75737F" stroke="#75737F" stroke-width="0.5"/>
+<rect id="Rectangle 77_2" x="89.25" y="289.25" width="8.5" height="0.5" fill="#75737F" stroke="#75737F" stroke-width="0.5"/>
+<rect id="Rectangle 78_2" x="89.25" y="293.25" width="11.5" height="0.5" fill="#75737F" stroke="#75737F" stroke-width="0.5"/>
+</g>
+<g id="Group 17">
+<rect id="Rectangle 76_3" x="120.25" y="285.25" width="17.5" height="0.5" fill="#75737F" stroke="#75737F" stroke-width="0.5"/>
+<rect id="Rectangle 77_3" x="125.25" y="289.25" width="8.5" height="0.5" fill="#75737F" stroke="#75737F" stroke-width="0.5"/>
+<rect id="Rectangle 78_3" x="123.25" y="293.25" width="11.5" height="0.5" fill="#75737F" stroke="#75737F" stroke-width="0.5"/>
+</g>
+<g id="Group 18">
+<rect id="Rectangle 76_4" x="151.25" y="285.25" width="17.5" height="0.5" fill="#75737F" stroke="#75737F" stroke-width="0.5"/>
+<rect id="Rectangle 77_4" x="160.25" y="289.25" width="8.5" height="0.5" fill="#75737F" stroke="#75737F" stroke-width="0.5"/>
+<rect id="Rectangle 78_4" x="157.25" y="293.25" width="11.5" height="0.5" fill="#75737F" stroke="#75737F" stroke-width="0.5"/>
+</g>
+<rect id="Rectangle 79" x="298.5" y="233.5" width="15" height="15" stroke="#2F2E33"/>
+<g id="Frame 30">
+<path id="Vector_5" d="M251.764 244L255.264 240.5L251.764 237" stroke="#2F2E33" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M254.764 240.5H239" stroke="#2F2E33" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M242.5 244L239 240.5L242.5 237" stroke="#2F2E33" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Group 13">
+<path id="Vector_8" d="M246.882 296.764L246.882 288.5" stroke="#2F2E33" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_9" d="M243.382 291.5L246.882 288L250.382 291.5" stroke="#2F2E33" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="Rectangle 79_2" x="238.25" y="285.25" width="17.5" height="0.5" fill="#75737F" stroke="#2F2E33" stroke-width="0.5"/>
+</g>
+<g id="Group 15">
+<path id="Vector_10" d="M306.118 285L306.118 293.264" stroke="#2F2E33" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_11" d="M309.618 290.264L306.118 293.764L302.618 290.264" stroke="#2F2E33" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="Rectangle 79_3" x="314.75" y="296.514" width="17.5" height="0.5" transform="rotate(-180 314.75 296.514)" fill="#75737F" stroke="#2F2E33" stroke-width="0.5"/>
+</g>
+<g id="Group 14">
+<path id="Vector_12" d="M276.882 296.764L276.882 292" stroke="#2F2E33" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_13" d="M276.882 282L276.882 286.764" stroke="#2F2E33" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_14" d="M274.765 293.809L276.882 291.691L279 293.809" stroke="#2F2E33" stroke-width="0.60505" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_15" d="M279 284.956L276.882 287.073L274.765 284.956" stroke="#2F2E33" stroke-width="0.60505" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="Rectangle 79_4" x="270.25" y="289.25" width="12.5" height="0.5" fill="#2F2E33" stroke="#2F2E33" stroke-width="0.5"/>
+</g>
+<g id="Options" class="optionsFonts">
+<g id="Rectangle 80" filter="url(#filter1_d_1070_822)">
+<rect x="74" y="135" width="333" height="177" rx="8" fill="#F7F7FC"/>
+</g>
+<g id="Frame 27683" class="fontOption" data-font-toggle="Inter">
+<text id="Inter" fill="#46454C" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="86" y="158.318">Inter</tspan></text>
+</g>
+<g id="Frame 27684" class="fontOption" data-font-toggle="Sora">
+<text id="Sora" fill="#46454C" xml:space="preserve" style="white-space: pre" font-family="Sora" font-size="16" letter-spacing="0em"><tspan x="86" y="192.94">Sora</tspan></text>
+</g>
+<g id="Frame 27685" class="fontOption" data-font-toggle="HelveticaNowDisplay">
+<text id="Helvetica Now Display_2" fill="#46454C" xml:space="preserve" style="white-space: pre" font-family="Helvetica Now Display" font-size="16" letter-spacing="0em"><tspan x="86" y="228.5">Helvetica Now Display</tspan></text>
+</g>
+<g id="Frame 27686" class="fontOption" data-font-toggle="DMSans">
+<text id="DM Sans" fill="#46454C" xml:space="preserve" style="white-space: pre" font-family="DMSans" font-size="16" letter-spacing="0em"><tspan x="86" y="263.956">DM Sans</tspan></text>
+</g>
+<g id="Frame 27687" class="fontOption" data-font-toggle="Raleway">
+<text id="Raleway" fill="#46454C" xml:space="preserve" style="white-space: pre" font-family="Raleway" font-size="16" letter-spacing="0em"><tspan x="86" y="300.148">Raleway</tspan></text>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_1070_822" x="0" y="0" width="481" height="422" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="33"/>
+<feGaussianBlur stdDeviation="29"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1070_822"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1070_822" result="shape"/>
+</filter>
+<filter id="filter1_d_1070_822" x="59" y="130" width="363" height="207" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="10"/>
+<feGaussianBlur stdDeviation="7.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.309804 0 0 0 0 0.356863 0 0 0 0 0.878431 0 0 0 0.21 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1070_822"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1070_822" result="shape"/>
+</filter>
+</defs>
+</svg>
