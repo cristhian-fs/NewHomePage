@@ -154,6 +154,7 @@ a {
   position: absolute;
   top: 60%;
   left: 40%;
+  z-index: 15;
 }
 
 .image-job {
@@ -278,6 +279,10 @@ html.dark .bars .barWhite {
   box-shadow: 0px 14px 52.2px 0px rgba(33, 48, 217, 0.2);
 }
 
+.feedbackCard {
+  box-shadow: 0px 12px 44.2px 0px rgba(12, 21, 120, 0.07);
+}
+
 .faqAnswer {
   max-height: 0px;
   overflow: hidden;
@@ -297,4 +302,9 @@ html.dark .bars .barWhite {
 
 .faqButton.active .faqIcon {
   transform: rotate(45deg);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=style.css.map */
