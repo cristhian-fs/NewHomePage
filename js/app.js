@@ -172,7 +172,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (fontOptionButton) {
     fontOptionButton.addEventListener("click", () => {
       openFontsOption();
-      console.log("Toggle fonts options opened");
     });
   }
 
@@ -208,84 +207,90 @@ document.addEventListener("DOMContentLoaded", () => {
   const figmaPinWrapper = document.querySelector(".figmaPinWrapper");
 
   const section02 = document.querySelector(".section02");
-
-  let tlFigma = gsap.timeline({
-    scrollTrigger: {
-      trigger: figmaPinWrapper,
-      start: "top top",
-      end: "+=" + 3 * window.innerHeight + "px",
-      scrub: 1,
-      pin: figmaPinWrapper,
-    },
-  });
-
-  tlFigma.fromTo(
-    loadingBar,
-    {
-      scaleX: 0,
-    },
-    {
-      scaleX: 1,
-      transformOrigin: "top left",
-      duration: 0.5,
-      ease: "none",
-    }
-  );
-
-  tlFigma.to(
-    figmaLoadingScreen,
-    {
-      opacity: 0,
-      duration: 0.5,
-    },
-    "-=0.1"
-  );
-
-  tlFigma.fromTo(
-    ".section02 > div",
-    {
-      opacity: 0,
-      filter: "blur(8px)",
-      y: 40,
-    },
-    {
-      opacity: 1,
-      filter: "blur(0px)",
-      y: 0,
-      duration: 0.5,
-      stagger: { each: 0.1 },
-      ease: "none",
-    },
-    "-=0.2"
-  );
-
-  tlFigma.fromTo(
-    figmaPinWrapper,
-    {
-      scale: 0.7,
-    },
-    {
-      scale: 1,
-      duration: 0.5,
-      ease: "none",
-    },
-    "-=1"
-  );
-
-  tlFigma.add(() => {}, "+=0.5");
+  const arrowS2 = document.querySelector(".arrow-s2-anim");
 
   let mm = gsap.matchMedia();
 
-  function hoverMouseMovement(e) {
-    const scaleFactor = 0.08; // Fator de escala para ajustar a sensibilidade do movimento
-    const mouseX = e.clientX - e.target.getBoundingClientRect().left; // Posição do mouse em relação ao botão
-    const mouseY = e.clientY - e.target.getBoundingClientRect().top;
-    const translateX = (mouseX - e.target.offsetWidth / 2) * scaleFactor; // Ajuste de escala para o movimento
-    const translateY = (mouseY - e.target.offsetHeight / 2) * scaleFactor;
+  mm.add("(min-width: 767px)", () => {
+    let tlFigma = gsap.timeline({
+      scrollTrigger: {
+        trigger: figmaPinWrapper,
+        start: "top top",
+        end: "+=" + 3 * window.innerHeight + "px",
+        scrub: 1,
+        pin: figmaPinWrapper,
+      },
+    });
 
-    // Aplica a transformação ao botão
-    this.style.transform = `translate(${translateX}px, ${translateY}px)`;
-  }
+    tlFigma.fromTo(
+      loadingBar,
+      {
+        scaleX: 0,
+      },
+      {
+        scaleX: 1,
+        transformOrigin: "top left",
+        duration: 0.5,
+        ease: "none",
+      }
+    );
+
+    tlFigma.to(
+      figmaLoadingScreen,
+      {
+        opacity: 0,
+        duration: 0.5,
+      },
+      "-=0.1"
+    );
+
+    tlFigma.fromTo(
+      ".section02 > div",
+      {
+        opacity: 0,
+        filter: "blur(8px)",
+        y: 40,
+      },
+      {
+        opacity: 1,
+        filter: "blur(0px)",
+        y: 0,
+        duration: 0.5,
+        stagger: { each: 0.1 },
+        ease: "none",
+      },
+      "-=0.2"
+    );
+
+    tlFigma.fromTo(
+      figmaPinWrapper,
+      {
+        scale: 0.7,
+      },
+      {
+        scale: 1,
+        duration: 0.5,
+        ease: "none",
+      },
+      "-=1"
+    );
+
+    tlFigma.add(() => {}, "+=0.5");
+  });
+
+  section02.addEventListener("mousemove", (e) => {
+    const x = e.clientX - arrowS2.offsetWidth / 2,
+      y = e.clientY - arrowS2.offsetHeight / 2;
+
+    const keyframes = {
+      transform: `translate(${x}px, ${y}px)`,
+    };
+    arrowS2.animate(keyframes, {
+      duration: 2000,
+      fill: "forwards",
+      easing: "ease",
+    });
+  });
 
   const mouseFollowBtns = document.querySelectorAll(".mouseFollowBtn");
 
@@ -297,7 +302,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const translateX = (mouseX - e.target.offsetWidth / 2) * scaleFactor; // Ajuste de escala para o movimento
       const translateY = (mouseY - e.target.offsetHeight / 2) * scaleFactor;
 
-      button.style.transform = `translate(${translateX}px, ${translateY}px)`;
+      requestAnimationFrame(() => {
+        button.style.transform = `translate(${translateX}px, ${translateY}px)`;
+      });
     });
 
     button.addEventListener("mouseleave", (e) => {
@@ -309,4 +316,13 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+});
+window.addEventListener("load", () => {
+  ScrollTrigger.refresh();
+});
+window.addEventListener("resize", () => {
+  ScrollTrigger.refresh();
+});
+window.addEventListener("orientationchange", function () {
+  ScrollTrigger.refresh();
 });
