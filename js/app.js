@@ -326,3 +326,23 @@ window.addEventListener("resize", () => {
 window.addEventListener("orientationchange", function () {
   ScrollTrigger.refresh();
 });
+
+window.addEventListener("focus", () => {
+  ScrollTrigger.refresh();
+});
+
+// PRELOAD IMAGES
+const blurredImageDiv = document.querySelectorAll(".blurred-img");
+blurredImageDiv.forEach((div) => {
+  const img = div.querySelector("img");
+  function loaded() {
+    div.classList.add("loaded");
+    div.style.backgroundImage = "";
+  }
+
+  if (img.complete) {
+    loaded();
+  } else {
+    img.addEventListener("load", loaded);
+  }
+});
