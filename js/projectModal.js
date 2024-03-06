@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   let isModalOpen = false;
-  console.log(isModalOpen);
 
   function openProjectModal(id) {
     if (id) {
@@ -103,10 +102,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   projectModal.addEventListener("click", (e) => {
+    let clickedInsideContent = false;
     projectsContent.forEach((content) => {
-      if (!content.contains(e.target)) {
-        closeProjectModal();
+      if (content.contains(e.target)) {
+        clickedInsideContent = true;
       }
     });
+
+    // Se o elemento clicado estiver dentro de algum dos projectsContent, não feche o modal
+    if (!clickedInsideContent) {
+      closeProjectModal();
+    }
   });
 });
